@@ -5,3 +5,22 @@
     object-fit: contain;
   }
 }
+
+
+/* Add a CSS class for the zoom effect */
+.zoom-effect {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease; /* Apply a smooth transition */
+}
+
+.zoom-effect img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Define the hover effect - scale the image up */
+.zoom-effect:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
